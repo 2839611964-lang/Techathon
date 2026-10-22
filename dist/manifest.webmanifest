@@ -1,0 +1,13 @@
+{
+  "name": "Marie · AI 美妆助手",
+  "short_name": "Marie",
+  "description": "实时语音与镜头辅助的 AI 美妆助手",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf7",
+  "theme_color": "#231523",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "/marie-avatar.webp", "sizes": "256x256", "type": "image/webp", "purpose": "any maskable" }
+  ]
+}

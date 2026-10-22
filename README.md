@@ -1,3 +1,13 @@
+# MEIYU · App Demo
+
+**在线体验：[打开 MEIYU App Demo](https://meiyu-touch-mirror.cleverlily17.chatgpt.site/)**
+
+分享此链接即可直接在浏览器体验，无需下载或安装。也可[直接进入 App](https://meiyu-touch-mirror.cleverlily17.chatgpt.site/app.html)。摄像头体验需用户授权；实时 AI 语音、云端问答与精细检查需要后端和 API 配置，静态演示不代表这些服务已连接。
+
+仓库包含 `src/`、`public/`、`api/`、`server/`、`scripts/` 和 `dist/`，源码与演示资源已补齐。`dist/` 是可部署的前端构建产物。
+
+---
+
 # Marie · AI 美妆助手
 
 面向美妆陪练场景的可部署 PWA：用户选择妆容后直接进入 Marie 跟妆，摄像头、豆包端到端双向语音、步骤教学与视觉妆面检查在同一页面协作。
