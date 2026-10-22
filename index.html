@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#13132d">
+<title>MEIYU · 探索你美的无限可能</title>
+<link rel="preload" href="./welcome/native/1-liquid.webp" as="image">
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#13132d;overflow:hidden}
+#welcome{position:relative;width:100%;height:100%;height:100dvh;overflow:hidden;cursor:pointer;outline:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none;isolation:isolate}
+.welcome-page{position:absolute;inset:0;overflow:hidden;contain:layout paint;background:#13132d}
+.welcome-page[hidden]{display:none}
+.artboard{position:absolute;left:50%;top:50%;width:max(100%,75dvh);height:max(100%,133.333vw);aspect-ratio:3/4;transform:translate(-50%,-50%)}
+.artboard img{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.begin-word{position:absolute;inset:0;display:grid;place-items:center;font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,11vw,112px);font-weight:400;color:#28134b;letter-spacing:.025em;pointer-events:none}
+.art-layer{opacity:0;will-change:transform,opacity;backface-visibility:hidden}
+@media(min-aspect-ratio:3/4){#welcome{width:auto;max-width:100%;aspect-ratio:3/4;margin:auto}.artboard{width:100%;height:100%}}
+</style>
+</head>
+<body>
+<main id="welcome" role="button" tabindex="0" aria-label="点击继续欢迎页面" data-page="1" data-phase="base">
+<section class="welcome-page" aria-label="MEIYU" aria-hidden="false"><div class="artboard">
+<img src="./welcome/native/1-liquid.webp" alt="蓝紫色流动水纹" fetchpriority="high">
+<img class="art-layer" data-motion="gold" src="./welcome/native/1-lettering.webp" alt="MEIYU AI BEAUTY COMPANION">
+</div></section>
+<section class="welcome-page" aria-label="张扬" aria-hidden="true" hidden><div class="artboard">
+<img src="./welcome/native/2-background.webp" alt="侧面人像">
+<img class="art-layer" data-motion="portrait" src="./welcome/native/2-portrait-clean.svg" alt="张扬妆容">
+<img class="art-layer" data-motion="logo" src="./welcome/native/2-logo.webp" alt="MEIYU">
+</div></section>
+<section class="welcome-page" aria-label="自然" aria-hidden="true" hidden><div class="artboard">
+<img src="./welcome/native/3-background.webp" alt="MEIYU BLUE HOUR">
+<img class="art-layer" data-motion="window" src="./welcome/native/3-portrait.webp" alt="自然妆容人像">
+</div></section>
+<section class="welcome-page" aria-label="优雅" aria-hidden="true" hidden><div class="artboard">
+<img src="./welcome/native/4-background.webp" alt="银色服饰人像">
+<img class="art-layer" data-motion="panel" src="./welcome/native/4-panel-clean.svg" alt="优雅">
+</div></section>
+<section class="welcome-page" aria-label="探索你美的无限可能" aria-hidden="true" hidden><div class="artboard">
+<img src="./welcome/native/5-liquid.webp" alt="流动水纹">
+<div class="art-layer begin-word" data-motion="slogan">Begin</div>
+</div></section>
+</main>
+<script type="module" src="./welcome/welcome.js?v=native-1"></script>
+</body>
+</html>
